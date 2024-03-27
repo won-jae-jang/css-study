@@ -1,0 +1,22 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 
+    가로, 세로길이 480  
+    왼쪽에는 50px, 위쪽에는 40px 여유 공간
+*/
+
+.box {
+  /* 
+        모든요소의 box-sizing = content-type
+        그래서 패딩 주면 size가 변경됨
+    */
+  box-sizing: border-box;
+  width: 480px;
+  height: 480px;
+  padding-top: 40px;
+  padding-left: 50px;
+  background-color: #0066ff;
+  color: #fff;
+}
