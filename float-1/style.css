@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+ul {
+  padding-left: 0;
+}
+
+.menu-bar {
+  width: 540px;
+  height: 54px;
+  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.menu-bar::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.menu-bar-item {
+  float: left;
+  margin-right: 30px;
+  list-style-type: none;
+}
+
+.menu-bar-item a {
+  display: inline-block;
+
+  /* padding-top: 16px;
+  padding-left: 20px; */
+}
+
+.menu-bar-item.selected a {
+  color: #2860e1;
+  border-bottom: 2px solid #2860e1;
+}

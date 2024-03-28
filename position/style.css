@@ -1,3 +1,11 @@
+/* 
+    position static - default
+    relative : 다른 요소에 영향을 주지 않음
+    absoulte : 기준 점을 정하고 이동
+    - 기준점 = position이 static이 아닌 조상을 확인하여 정함
+
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -6,21 +14,21 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.grandparent {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #1f2d3d;
+}
+
 .parent {
   width: 600px;
   margin: 0 auto;
   background-color: #eff2f7;
 }
 
-.parent::after {
-  /* clear는 display 속성이 block인 속성만 적용 가능 */
-  content: "";
-  display: block;
-  clear: left;
-}
-
 .child {
-  float: left;
   width: 200px;
   height: 200px;
   line-height: 200px;
@@ -31,6 +39,8 @@ body {
 
 .red {
   background-color: red;
+  position: fixed;
+  bottom: 0px;
 }
 
 .yellow {
@@ -44,17 +54,4 @@ body {
 .other {
   color: #fff;
   background-color: black;
-}
-
-/* 가상화 앞 뒤에 가상 요소를 추가할 때 활용 */
-.pseudo::before {
-  content: "*";
-}
-
-.pseudo::after {
-  content: "";
-  width: 10px;
-  height: 20px;
-  display: inline-block;
-  background-color: pink;
 }
