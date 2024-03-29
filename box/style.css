@@ -28,6 +28,10 @@ body {
   color: #fff;
   font-weight: 600;
 }
+/* 
+  float: 가로배치를 도와줌
+  
+*/
 
 .red {
   background-color: red;
