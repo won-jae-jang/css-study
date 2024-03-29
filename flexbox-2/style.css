@@ -63,11 +63,11 @@ p {
 /* ▼ WHERE YOUR CODE BEGINS */
 
 .card {
-  padding-left: 15px;
-  padding-top: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .card-user {

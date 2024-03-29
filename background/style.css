@@ -1,0 +1,80 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+.card {
+  display: flex;
+
+  width: 840px;
+  height: 248px;
+  border: solid 1px;
+
+  padding: 35px;
+}
+
+.card-image {
+  width: 300px;
+  height: 200px;
+  background-image: url(./assets/img-house.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+}
+
+.card-header {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.property-rate {
+  display: flex;
+  width: 93px;
+  height: 20px;
+  position: absolute;
+  right: 3px;
+}
+
+.property-rate::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url("./assets/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.card-content {
+  /* flex-grow: 1; */
+  margin-left: 25px;
+  width: 520px;
+}
+
+.card-title {
+  width: 444px;
+  height: 32px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #151b26;
+}
+
+.plus-badge {
+  background-color: rgb(201, 50, 50);
+  padding: 4px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+span {
+  color: grey;
+}
+
+dd {
+  margin-left: 0;
+}

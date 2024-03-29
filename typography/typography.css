@@ -1,0 +1,77 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+
+.fs-tiny {
+  font-size: 16px;
+}
+
+.fs-small {
+  font-size: 20px;
+}
+
+.fs-base {
+  font-size: 24px;
+}
+
+.fs-medium {
+  font-size: 28px;
+}
+
+.fs-large {
+  font-size: 32px;
+}
+
+.fs-h2 {
+  font-size: 40px;
+}
+
+.fs-h1 {
+  font-size: 48px;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 300;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.text-dark {
+  color: rgba(0, 0, 0, 1);
+}
+
+.text-primary {
+  color: rgba(0, 0, 0, 0.7);
+}
+.text-secondary {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.text-tertiary {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.text-white {
+  color: #fff;
+  background-color: black;
+}
+
+.text-success {
+  color: rgb(64, 216, 64);
+}
+
+.text-error {
+  color: rgb(226, 136, 71);
+}
+
+.text-info {
+  color: rgb(47, 121, 206);
+}
