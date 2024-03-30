@@ -5,21 +5,68 @@
 }
 
 .loading {
-  /* display: flex;
-  flex-direction: column; */
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 200px;
   width: 500px;
   height: 216px;
+  border: solid 1px black;
 }
 
 .loading-title {
   text-align: center;
-  line-height: 216px;
+  height: 150px;
+  margin: 0;
+  animation-name: flicker;
+  animation-duration: 1600ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 }
 
 .progress-bar {
+  position: relative;
   width: 300px;
   height: 12px;
   background-color: grey;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 12px;
+  border-radius: 5px;
+  background-color: #13ce66;
+  animation-name: loading-bar;
+  animation-duration: 1600ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  80% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

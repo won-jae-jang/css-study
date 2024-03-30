@@ -1,0 +1,31 @@
+/* 
+    overflow: 넘쳐흘렀을 때 어떻게 할까 설정해주는 속성
+    - visible, auto, scroll, hidden 
+    - visible: 기본 값으로 넘쳐도 보여주라는 것
+    - auto, scroll: 넘쳐흘렀을때 스크롤로 표현 
+    - hidden: 넘쳐흘렀을때 안보이게 함
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  width: 500px;
+  height: 400px;
+  background-color: #0066ff;
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+  /* 아래처럼 세부적으로 설정 가능: 가록축은 스크롤 허용, 세로축은 넘치는거 없애기 */
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+blockquote {
+  background-color: #ffc82c;
+}

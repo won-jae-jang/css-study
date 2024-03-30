@@ -1,0 +1,41 @@
+/* 
+    box-shadow: 요소에 그림자를 줄때 사용
+    - h-offset, v-offset, blur, spread, color
+    - x , y, 흐린 정도, 그림자 사이즈, 색상
+    - 위의 5가지 요소를 모두 순서대로 적어줘야 한다
+    - 요즘 Neumorphism 스타일이 유행인데, Neumorphism.io 사이트에서 커스터마이징 가능
+
+*/
+
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  padding: 0 36px;
+  border: none;
+  border-radius: 50px;
+  margin: 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:focus button:active {
+  outline: none;
+}
+
+.cancel-button {
+  background-color: #ff4949;
+  transition: box-shadow 250ms ease-in;
+}
+
+.cancel-button:hover {
+  box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
+}
+
+.confirm-button {
+  background-color: #13ce66;
+  box-shadow: 0 10px 16px 0 rgba(19, 206, 102, 0.35);
+}
